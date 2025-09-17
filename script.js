@@ -525,19 +525,12 @@ function optimizePerformance() {
     
     images.forEach(img => imageObserver.observe(img));
     
-    // Preload critical resources
-    const criticalResources = [
-        'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700',
-        'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700'
-    ];
-    
-    criticalResources.forEach(resource => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'style';
-        link.href = resource;
-        document.head.appendChild(link);
-    });
+    // Optimize font loading performance
+    if ('fonts' in document) {
+        document.fonts.ready.then(() => {
+            console.log('Fonts loaded successfully');
+        });
+    }
 }
 
 // Initialize performance optimizations
