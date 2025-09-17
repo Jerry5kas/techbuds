@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud & DevOps Services | AWS, Azure, CI/CD | TechBuds</title>
+    <meta name="description" content="Professional cloud and DevOps services including AWS, Azure, CI/CD pipelines, and infrastructure automation. Scale your applications with reliable cloud solutions.">
+    
+    <!-- Basic / canonical -->
+    <link rel="canonical" href="https://techbuds.online/cloud-devops.html">
+    <meta name="robots" content="index, follow">
+
+    <!-- Social preview (Open Graph) -->
+    <meta property="og:site_name" content="TechBuds">
+    <meta property="og:title" content="Cloud & DevOps Services | AWS, Azure, CI/CD | TechBuds">
+    <meta property="og:description" content="Professional cloud and DevOps services including AWS, Azure, CI/CD pipelines, and infrastructure automation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techbuds.online/cloud-devops.html">
+    <meta property="og:image" content="https://techbuds.online/og-image.jpg">
+    <meta property="og:image:alt" content="TechBuds Cloud & DevOps Services">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@techbuds57">
+    <meta name="twitter:creator" content="@techbuds57">
+    <meta name="twitter:title" content="Cloud & DevOps Services | TechBuds">
+    <meta name="twitter:description" content="Professional cloud and DevOps services including AWS, Azure, CI/CD pipelines, and infrastructure automation.">
+    <meta name="twitter:image" content="https://techbuds.online/og-image.jpg">
+
+    <!-- Favicon & theme -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#6366F1">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Particle.js for background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    
+    <!-- Tailwind configuration is now handled in tailwind.config.js -->
+</head>
+<body class="font-inter bg-white text-gray-900">
+    <!-- Skip to content link for accessibility -->
+    <a class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-primary text-white p-2 z-50" href="#main-content">Skip to content</a>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold font-space text-gray-900 hover:text-primary transition-colors">
+                        TechBuds
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-primary transition-colors relative group">Home</a>
+                        <a href="index.html#services" class="text-gray-700 hover:text-primary transition-colors relative group">Services</a>
+                        <a href="index.html#portfolio" class="text-gray-700 hover:text-primary transition-colors relative group">Portfolio</a>
+                        <a href="index.html#contact" class="text-gray-700 hover:text-primary transition-colors relative group">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary transition-colors p-2" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="index.html#services" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="index.html#portfolio" class="block px-3 py-2 text-gray-700 hover:text-primary">Portfolio</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="pt-20 pb-16 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold font-space text-gray-900 mb-6">
+                        Professional <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Cloud & DevOps</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                        Scale your applications with reliable cloud infrastructure and automated DevOps practices. From AWS to Azure, we help you build, deploy, and maintain robust systems.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                            Get Free Consultation
+                        </a>
+                        <a href="#services" class="border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section id="services" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-space text-gray-900 mb-4">
+                        Our Cloud & DevOps Services
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Comprehensive cloud and DevOps solutions to modernize your infrastructure and accelerate your development lifecycle.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cloud Migration -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-cloud-upload-alt text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-space mb-4 text-gray-900">Cloud Migration</h3>
+                        <p class="text-gray-600 mb-6">
+                            Seamlessly migrate your applications and data to the cloud with minimal downtime and maximum efficiency.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                AWS Migration
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Azure Migration
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                GCP Migration
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Zero-Downtime Migration
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CI/CD Pipelines -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-sync-alt text-secondary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-space mb-4 text-gray-900">CI/CD Pipelines</h3>
+                        <p class="text-gray-600 mb-6">
+                            Automate your development workflow with continuous integration and deployment pipelines for faster, reliable releases.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Jenkins & GitLab CI
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                GitHub Actions
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Automated Testing
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Blue-Green Deployment
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Infrastructure as Code -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-code text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-space mb-4 text-gray-900">Infrastructure as Code</h3>
+                        <p class="text-gray-600 mb-6">
+                            Manage and provision your infrastructure through code for consistency, repeatability, and version control.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Terraform
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                CloudFormation
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Ansible
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Kubernetes
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cloud Platforms -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-space text-gray-900 mb-4">
+                        Cloud Platforms We Work With
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        We have expertise across all major cloud platforms to provide you with the best solution for your needs.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                        <div class="w-20 h-20 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-aws text-orange-500 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-space mb-4 text-gray-900">Amazon Web Services</h3>
+                        <p class="text-gray-600 mb-6">
+                            Comprehensive AWS services including EC2, S3, RDS, Lambda, and more for scalable cloud solutions.
+                        </p>
+                        <ul class="space-y-2 text-gray-600 text-left">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                EC2 & Auto Scaling
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                S3 & CloudFront
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                RDS & DynamoDB
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Lambda & API Gateway
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                        <div class="w-20 h-20 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-microsoft text-blue-500 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-space mb-4 text-gray-900">Microsoft Azure</h3>
+                        <p class="text-gray-600 mb-6">
+                            Full Azure cloud services including App Service, SQL Database, Functions, and enterprise solutions.
+                        </p>
+                        <ul class="space-y-2 text-gray-600 text-left">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                App Service & Functions
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                SQL Database & Cosmos DB
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Virtual Machines
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Azure DevOps
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-google text-green-500 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-space mb-4 text-gray-900">Google Cloud Platform</h3>
+                        <p class="text-gray-600 mb-6">
+                            GCP services including Compute Engine, Cloud Storage, BigQuery, and AI/ML solutions.
+                        </p>
+                        <ul class="space-y-2 text-gray-600 text-left">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Compute Engine & GKE
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Cloud Storage & CDN
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                BigQuery & Firestore
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Cloud Functions
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DevOps Tools -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-space text-gray-900 mb-4">
+                        DevOps Tools & Technologies
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        We use industry-leading tools and technologies to streamline your development and operations processes.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-docker text-blue-500 text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Docker</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cube text-blue-600 text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Kubernetes</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-jenkins text-red-500 text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Jenkins</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-gitlab text-orange-500 text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">GitLab CI</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-github text-gray-800 text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">GitHub Actions</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white rounded-lg shadow-md flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-mountain text-purple-500 text-2xl"></i>
+                        </div>
+                        <p class="text-gray-700 font-medium">Terraform</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold font-space text-gray-900 mb-4">
+                        Benefits of Our Cloud & DevOps Services
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Transform your development and operations with our comprehensive cloud and DevOps solutions.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-rocket text-green-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900">Faster Deployment</h3>
+                        <p class="text-gray-600 text-sm">Automated CI/CD pipelines reduce deployment time from days to minutes.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900">Enhanced Security</h3>
+                        <p class="text-gray-600 text-sm">Implement security best practices and compliance standards across your infrastructure.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-line text-purple-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900">Cost Optimization</h3>
+                        <p class="text-gray-600 text-sm">Optimize cloud costs with right-sizing, auto-scaling, and resource monitoring.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-sync text-orange-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-900">High Availability</h3>
+                        <p class="text-gray-600 text-sm">Build resilient systems with 99.9% uptime and disaster recovery solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="py-16 bg-gradient-to-r from-primary to-secondary">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold font-space text-white mb-6">
+                    Ready to Modernize Your Infrastructure?
+                </h2>
+                <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+                    Let's discuss your cloud and DevOps needs and create a strategy that scales with your business growth.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="index.html#contact" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Get Free Infrastructure Audit
+                    </a>
+                    <a href="tel:+917092936243" class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                        Call Now: +91-7092936243
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold font-space mb-4">TechBuds</h3>
+                    <p class="text-gray-400 mb-6">
+                        Empowering businesses with digital transformation through innovative web, mobile, and cloud solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/techbuds57" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://github.com/techbuds57" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="web-development.html" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="mobile-apps.html" class="text-gray-400 hover:text-white transition-colors">Mobile Apps</a></li>
+                        <li><a href="digital-marketing.html" class="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
+                        <li><a href="cloud-devops.html" class="text-gray-400 hover:text-white transition-colors">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>+91-7092936243</li>
+                        <li>techbuds57@gmail.com</li>
+                        <li>India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 TechBuds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

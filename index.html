@@ -3,22 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechBuds - Digital Solutions Hub</title>
-    <meta name="description" content="Empowering Businesses with Digital Transformation. Web, Mobile, Cloud, DevOps & Digital Marketing solutions.">
+    <title>TechBuds — Web, Mobile & Cloud Solutions | TechBuds</title>
+    <meta name="description" content="TechBuds builds scalable web & mobile apps, cloud & DevOps solutions, and growth-focused digital marketing. Get a free project quote.">
     
-    <!-- Tailwind CSS - CDN Version (Development) -->
-    <!-- 
-    PRODUCTION SETUP:
-    1. Install Tailwind CSS: npm install -D tailwindcss
-    2. Initialize: npx tailwindcss init
-    3. Configure tailwind.config.js
-    4. Build CSS: npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-    5. Replace this CDN link with: <link rel="stylesheet" href="./dist/output.css">
-    -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Basic / canonical -->
+    <link rel="canonical" href="https://techbuds.online/">
+    <meta name="robots" content="index, follow">
+
+    <!-- Social preview (Open Graph) -->
+    <meta property="og:site_name" content="TechBuds">
+    <meta property="og:title" content="TechBuds — Web, Mobile & Cloud Solutions">
+    <meta property="og:description" content="Empowering Businesses with Digital Transformation. Web, Mobile, Cloud, DevOps & Digital Marketing solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techbuds.online/">
+    <meta property="og:image" content="https://techbuds.online/og-image.jpg">
+    <meta property="og:image:alt" content="TechBuds — Digital Solutions Hub">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@techbuds57">
+    <meta name="twitter:creator" content="@techbuds57">
+    <meta name="twitter:title" content="TechBuds — Web, Mobile & Cloud Solutions">
+    <meta name="twitter:description" content="Empowering Businesses with Digital Transformation.">
+    <meta name="twitter:image" content="https://techbuds.online/og-image.jpg">
+
+    <!-- Favicon & theme -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <meta name="theme-color" content="#6366F1">
+
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TechBuds",
+      "url": "https://techbuds.online",
+      "logo": "https://techbuds.online/logo.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/techbuds57",
+        "https://twitter.com/techbuds57",
+        "https://github.com/techbuds57"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+91-7092936243",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": "English"
+      }]
+    }
+    </script>
+      
+    <!-- Tailwind CSS is now built locally and included via styles.css -->
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Scroll to Top Button Styles -->
+    <style>
+        #scroll-to-top {
+            position: fixed !important;
+            bottom: 24px !important;
+            right: 24px !important;
+            width: 56px !important;
+            height: 56px !important;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%) !important;
+            border: 2px solid rgba(255, 255, 255, 0.2) !important;
+            border-radius: 50% !important;
+            color: white !important;
+            font-size: 18px !important;
+            cursor: pointer !important;
+            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3) !important;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            z-index: 9999 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            backdrop-filter: blur(10px) !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            transform: translateY(20px) !important;
+        }
+        
+        #scroll-to-top:hover {
+            transform: translateY(-2px) scale(1.05) !important;
+            box-shadow: 0 12px 40px rgba(99, 102, 241, 0.4) !important;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+        }
+        
+        #scroll-to-top:active {
+            transform: translateY(0) scale(0.95) !important;
+        }
+        
+        #scroll-to-top.show {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+            transform: translateY(0) !important;
+            animation: slideInUp 0.3s ease-out !important;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        #scroll-to-top i {
+            transition: transform 0.3s ease !important;
+        }
+        
+        #scroll-to-top:hover i {
+            transform: translateY(-2px) !important;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            #scroll-to-top {
+                bottom: 20px !important;
+                right: 20px !important;
+                width: 50px !important;
+                height: 50px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -32,44 +146,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Particle.js for background effects -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
     
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'space': ['Space Grotesk', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
-                        'mono': ['JetBrains Mono', 'monospace'],
-                    },
-                    colors: {
-                        'primary': '#6366F1',
-                        'secondary': '#8B5CF6',
-                        'accent': '#06B6D4',
-                        'dark': '#0F172A',
-                        'light': '#F8FAFC',
-                        'gradient-start': '#667eea',
-                        'gradient-end': '#764ba2',
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'bounce-slow': 'bounce 3s infinite',
-                        'spin-slow': 'spin 8s linear infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Tailwind configuration is now handled in tailwind.config.js -->
 </head>
 <body class="font-inter bg-white text-gray-900">
+    <!-- Skip to content link for accessibility -->
+    <a class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-primary text-white p-2 z-50" href="#home">Skip to content</a>
     
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg border-b border-gray-100 z-50 transition-all duration-300">
@@ -108,8 +191,8 @@
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary transition-colors p-2">
-                        <i class="fas fa-bars text-xl"></i>
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary transition-colors p-2" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars text-xl" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
@@ -1734,14 +1817,20 @@
     <script src="script.js"></script>
     
     <script>
+        // Initialize AOS after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
         // Initialize AOS
         AOS.init({
             duration: 1000,
             once: true,
             offset: 100
+            });
         });
         
+        // Initialize Particles.js after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
         // Initialize Particles.js
+            if (typeof particlesJS !== 'undefined') {
         particlesJS('particles-js', {
             particles: {
                 number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -1758,6 +1847,8 @@
                 modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
             },
             retina_detect: true
+                });
+            }
         });
         
         // Portfolio Filter Functionality

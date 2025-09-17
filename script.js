@@ -417,17 +417,18 @@ function setupLazyLoading() {
 function addScrollToTop() {
     const scrollToTopBtn = document.createElement('button');
     scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    scrollToTopBtn.className = 'fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg hover:bg-secondary transition-all duration-300 opacity-0 pointer-events-none z-50';
     scrollToTopBtn.id = 'scroll-to-top';
+    scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
+    scrollToTopBtn.setAttribute('title', 'Scroll to top');
     
     document.body.appendChild(scrollToTopBtn);
     
     // Show/hide button based on scroll position
     window.addEventListener('scroll', throttle(() => {
         if (window.scrollY > 300) {
-            scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            scrollToTopBtn.classList.add('show');
         } else {
-            scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            scrollToTopBtn.classList.remove('show');
         }
     }, 100));
     
@@ -437,6 +438,17 @@ function addScrollToTop() {
             top: 0,
             behavior: 'smooth'
         });
+    });
+    
+    // Add keyboard support
+    scrollToTopBtn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
     });
 }
 
